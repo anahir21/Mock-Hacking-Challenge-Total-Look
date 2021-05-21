@@ -11,26 +11,33 @@ function ModalLog() {
 
     return (
         <div className="modalLoginContent">
-        <input
-            type="name"
-            onChange={(e) => {
-            setValue(e.target.value);
-            }}
-        />
-        <input
-            type="password"
-            onChange={(e) => {
-            setValue(e.target.value);
-            }}
-        />
-        <button
-            onClick={() => {
-            // Сlose the dialog and return the value
-            dialog.close(value);
-            }}
-        >
-            Login
-        </button>
+            <div className="h2ModalLogin">
+                <h2>Welcome back!</h2>
+                <h2>Sign In your account!</h2>
+            </div>
+            <input
+                type="name"
+                onChange={(e) => {
+                setValue(e.target.value);
+                }}
+                className ="inputsModalLogin"
+            />
+            <input
+                type="password"
+                onChange={(e) => {
+                setValue(e.target.value);
+                }}
+                className ="inputsModalLogin"
+            />
+            <button
+                onClick={() => {
+                // Сlose the dialog and return the value
+                dialog.close(value);
+                }}
+                className ="buttonModalLogin"
+            >
+                Login
+            </button>
         </div>
     );
 }
@@ -40,10 +47,12 @@ function ModalLogin() {
         <div>
         <button
             onClick={async () => {
-                const result = await CustomDialog(<ModalLog />, {
-                    title: 'Welcome back! Sign In your account!',
-                    showCloseIcon: true,
-                });
+                const result = await CustomDialog(<ModalLog />
+                //     , {
+                //     title: 'Welcome back! Sign In your account!',
+                //     showCloseIcon: true,
+                // }
+                );
                 console.log(result);
             }}
         >
