@@ -18,7 +18,7 @@ function Clothes() {
   let match = useRouteMatch();
   return (
     <div>
-      <h2>Holi, estás en Clothes</h2>
+      {/* <h2>Holi, estás en Clothes</h2>
       <ul>
 				<li>
           <Link to={`${match.url}`}>All</Link>
@@ -35,7 +35,7 @@ function Clothes() {
 				<li>
           <Link to={`${match.url}/coats`}>coats</Link>
         </li>
-      </ul>
+      </ul> */}
 
       <Switch>
 			<Route path={`${match.path}/coats`}>
