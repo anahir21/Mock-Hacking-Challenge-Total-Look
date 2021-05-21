@@ -1,19 +1,29 @@
 .product-card{
 	padding: 0%;
-	height: 22px;
-	width: 20%;
-	background-color: aqua;
+	height: 349.75px ;
+	width: 202.03px;
+	background-color: white;
+	margin: 3%;
 }
 
 .product-card-imgConainer {
 
 }
+.product-card-img{
+	width: 100%;
+	
+}
 
 .product-card-infoContainer {
- 
+	height: 46px;
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+
 }
 
 .product-card-info-container {
+	width: 75%;
 
 }
 

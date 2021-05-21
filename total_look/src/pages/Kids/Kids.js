@@ -84,17 +84,6 @@ const mockProductsData = {
 
 
 const Kids = () => {
-	// const [products, setProducts] = useState();
-	// const getProducts = ()=> {
-	// 	let filterProducts = mockProductsData.products.filter(
-	// 	(item) => item.category === "kids"
-	// );
-	// setProducts(filterProducts);
-	// }
-	// useEffect(() => {
-  //   getProducts();
-  // }, []);
-	
 	return (
 		<div>
 			Holi, estás en Kids
