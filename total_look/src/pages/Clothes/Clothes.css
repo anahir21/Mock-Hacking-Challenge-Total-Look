@@ -9,11 +9,10 @@
 .secondNav{
 	display: flex;
 	flex-direction: row;
-	width: 80%;
-	justify-content: center;
 }
 .secondNav li {
 	margin-left: 2%;
 	list-style: none;
+	width: 10%;
 }
 

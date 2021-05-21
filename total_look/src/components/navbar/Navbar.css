@@ -21,6 +21,7 @@
     width: 15%;
     height: auto;
     margin-left: 3%;
+		cursor: pointer;
 }
 
 .searchInput{
@@ -63,6 +64,7 @@
     top: -27%;
     right: 3%;
     font-size: 13px;
+		cursor: pointer;
 }
 
 .join{
@@ -120,6 +122,16 @@ h2{
 .mainNav li {
 	margin-left: 2%;
 	list-style: none;
+	cursor: pointer;
+}
+
+.mainNav li a{
+
+}
+
+a{
+  text-decoration: none;
+  color:black;
 }
 
 

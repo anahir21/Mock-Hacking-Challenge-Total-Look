@@ -5,26 +5,24 @@ import cart from '../../assets/cart.png'
 import eyeglass from '../../assets/eyeglass.png'
 import moreoffers from '../../assets/Group 55.png'
 import ModalLogin from '../../components/ModalLogin/ModalLogin';
+import { useHistory } from "react-router-dom";
 
 export default function Navbar() {
-    // const history = useHistory();
-    // const handleClothes = () => history.push('/clothes');
-    // const handleShoes = () => history.push('/shoes');
-    // const handleSports = () => history.push('/sports');
-    // const handleAccesories = () => history.push('/accessories');
-    // const handleKids = () => history.push('/kids');
-
+		let history = useHistory();
+		function handlePath (path) {
+			history.push(path);
+		}
     return (
         <div>
             <div className="navbar">
-                <img className="logotype" src={Logo} alt="Logo totallook"/>  
+                <img className="logotype" src={Logo} alt="Logo totallook"onClick={()=>handlePath('/')}/>  
                 <div classnames="promotions">
 									<ul className="mainNav">
-										<li>Clothes</li>
-										<li>Accessories</li>
-										<li>Shoes</li>
-										<li>Spors</li>
-										<li>Kids</li>
+										<li><a href="#" onClick={()=>handlePath('/clothes')}>CLOTHES</a></li>
+										<li><a href="#" onClick={()=>handlePath('/accessories')}>ACCESORIES</a></li>
+										<li><a href="#" onClick={()=>handlePath('/shoes')}>SHOES</a></li>
+										<li><a href="#" onClick={()=>handlePath('/sports')}>SPORTS</a></li>
+										<li><a href="#" onClick={()=>handlePath('/kids')}>KIDS</a></li>
 									</ul>
                     <h1>MORE OFFERS</h1>  
                 </div> 
