@@ -17,23 +17,26 @@ export default function Navbar() {
     return (
         <div>
             <div className="navbar">
-                <img className="logotype" src={Logo} alt="Logo totallook"/>
-                <input className="searchInput"></input>
-                <img className="eyeglass" src={eyeglass} alt="eye glass"/>
-                <img className="cart" src={cart} alt="shopping cart"/>  
+                <img className="logotype" src={Logo} alt="Logo totallook"/>  
                 <div classnames="promotions">
-                     <img className="salesImage" src={moreoffers} alt="more offers"/>
-                     <h1>MORE OFFERS</h1>  
+									<ul className="mainNav">
+										<li>Clothes</li>
+										<li>Accessories</li>
+										<li>Shoes</li>
+										<li>Spors</li>
+										<li>Kids</li>
+									</ul>
+                    <h1>MORE OFFERS</h1>  
                 </div> 
             <div className="linkModals">
                     <ModalLogin/>
             </div>      
-                <div class="categories">
+                {/* <div class="categories">
                     <h2>SHOES</h2>
                     <h2>SPORTS</h2>
                     <h2>ACCESORIES</h2>
                     <h2>KIDS</h2>
-                </div>
+                </div> */}
     
             </div>
             

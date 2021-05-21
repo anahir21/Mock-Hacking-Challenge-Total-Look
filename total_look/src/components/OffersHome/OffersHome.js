@@ -1,41 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./OffersHome.css";
 import bannerHS from "../../assets/bannerHS.png";
 import bannerT from "../../assets/bannerT.png";
 import bannerB from "../../assets/bannerB.png";
-import accesoriesbanner from "../../assets/accesoriesbanner.jpg"
-import dressesbanner from "../../assets/dressesbanner.jpg";
-import kidsbanner from "../../assets/kidsbanner.jpg";
-import shoesbanner from "../../assets/shoesbanner.jpg";
-import sportsbanner from "../../assets/sportsbanner.jpg"
-import underwearbanner from "../../assets/underwearbanner.jpg"
 
 
 
 
 
 
+/* 
 
-//import Component Header
-//import Component Footer
-
-export const Offers = (props) => {
-  /*   const [offer, setOffer] = useState();
-
-    useEffect(() => {
-        getOffer();
-    },[]);
-
-    const getOffer = async () => {
-        const mockOffer = {
-
-        }
-        
-        setOffer();
-    }
-
+export default OffersHome = () => {
   
- */
   const mockProductsOffer = [
     {
       id: "t01",
@@ -163,23 +140,8 @@ export const Offers = (props) => {
       <img className="banner" src={bannerHS} />
       <img className="bannerOffers" src={bannerT} />
       <img className="bannerOffers" src={bannerB} />
-      <img className="bannerOffers" src={accesoriesbanner} />
-      <img className="bannerOffers" src={dressesbanner} />
-      <img className="bannerOffers" src={kidsbanner} />
-      <img className="bannerOffers" src={shoesbanner} />
-      <img className="bannerOffers" src={underwearbanner} />
-      <img className="bannerOffers" src={sportsbanner} />
 
-
-
-
-      {offers &&
-        offers.map((item) => (
-          <div key={item.id} className="offerContainer">
-            <h3 className="text-black">{item.description}</h3>
-            <p className="text-black">{item.img}</p>
-          </div>
-        ))}
     </div>
   );
 };
+ */

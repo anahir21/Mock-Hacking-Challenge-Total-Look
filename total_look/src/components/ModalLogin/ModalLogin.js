@@ -46,7 +46,8 @@ function ModalLogin() {
     return (
         <div>
         <a className="log" href = " "
-            onClick={async () => {
+            onClick={async (e) => {
+                e.preventDefault();
                 const result = await CustomDialog(<ModalLog/>
                 //     , {
                 //     title: 'Welcome back! Sign In your account!',
