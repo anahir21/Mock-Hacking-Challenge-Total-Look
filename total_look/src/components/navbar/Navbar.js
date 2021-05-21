@@ -23,8 +23,9 @@ export default function Navbar() {
 										<li><a href="#" onClick={()=>handlePath('/shoes')}>SHOES</a></li>
 										<li><a href="#" onClick={()=>handlePath('/sports')}>SPORTS</a></li>
 										<li><a href="#" onClick={()=>handlePath('/kids')}>KIDS</a></li>
+										<li></li>
 									</ul>
-                    <h1>MORE OFFERS</h1>  
+                    <h1><a href="#" onClick={()=>handlePath('/offers')}>MORE OFFERS</a></h1>  
                 </div> 
             <div className="linkModals">
                     <ModalLogin/>
