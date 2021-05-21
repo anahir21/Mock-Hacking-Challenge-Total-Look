@@ -10,6 +10,8 @@ import {
 
 import Tops from './Tops/Tops.js'
 import Bottoms from './Bottoms/Bottoms.js'
+import Coats from './Coats/Coats.js'
+import Sets from './Sets/Sets.js'
 
 
 function Clothes() {
@@ -27,9 +29,21 @@ function Clothes() {
 				<li>
           <Link to={`${match.url}/bottoms`}>Bottoms</Link>
         </li>
+				<li>
+          <Link to={`${match.url}/sets`}>Sets</Link>
+        </li>
+				<li>
+          <Link to={`${match.url}/coats`}>coats</Link>
+        </li>
       </ul>
 
       <Switch>
+			<Route path={`${match.path}/coats`}>
+          <Coats />
+        </Route>
+				<Route path={`${match.path}/sets`}>
+          <Sets />
+        </Route>
 				<Route path={`${match.path}/bottoms`}>
           <Bottoms />
         </Route>

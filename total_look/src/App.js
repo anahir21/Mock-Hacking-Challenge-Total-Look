@@ -36,6 +36,9 @@ function App() {
 				<Route path="/clothes">
           <Clothes />
 				</Route>
+				<Route path="/offers">
+          <Offers />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
