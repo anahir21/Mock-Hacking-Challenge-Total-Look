@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import flor from '../images/flor.png'
+import flor from '../../assets/flor.png'
 
 export default function Footer() {
     return (

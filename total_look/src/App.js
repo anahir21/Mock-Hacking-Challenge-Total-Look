@@ -16,12 +16,16 @@ import Kids from './pages/Kids/Kids';
 import Offers from './pages/Offers/Offers';
 import Shoes from './pages/Shoes/Shoes';
 import Sports from './pages/Sports/Sports';
+import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <Router>
+       <Navbar/>
+       <Footer/>
       <Switch>
-				<Route path="/kids">
+				<Route path="/kids">  
           <Kids />
 				</Route>
 				<Route path="/accessories">
