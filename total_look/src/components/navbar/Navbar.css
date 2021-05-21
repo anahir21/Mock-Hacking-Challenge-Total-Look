@@ -1,0 +1,49 @@
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.navbar{
+    border-top: 25px solid  #F9F9F9;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+
+}
+
+.border {
+    border-top: 25px solid  #fc810f;
+    /* width: 100%;
+    height: 38px;
+    background:  solid #fc810f;
+    position: relative; */
+}
+
+
+.logotype{
+    width: 180px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.cart{
+    width: 50px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+.eyeglass {
+    width: 25px;
+    margin-top: 15px;
+    margin-right: 2px;
+}
