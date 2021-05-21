@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import ProductCard from "../../components/ProductsCard/ProductCard.js"
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,16 +11,27 @@ import {
 
 import Tops from './Tops/Tops.js'
 import Bottoms from './Bottoms/Bottoms.js'
-import Coats from './Coats/Coats.js'
+import Coats from './Coats/Coats.js'   
 import Sets from './Sets/Sets.js'
 
 
 function Clothes() {
+	const [kproducts, setKproducts] = useState();
+	const getProducts = async()=> {
+		let url = 'http://localhost:5000/products';
+		let getFetchData = await fetch(url).then((result) => result.json());
+		let filterProducts = getFetchData.filter(
+		(item) => item.category === "clothes"
+		);
+		setKproducts(filterProducts);
+	}
+	useEffect(() => {
+		getProducts();
+	}, []);
   let match = useRouteMatch();
   return (
     <div>
-      <h2>Holi, estás en Clothes</h2>
-      <ul>
+      <ul className="secondNav">
 				<li>
           <Link to={`${match.url}`}>All</Link>
         </li>
@@ -51,7 +63,14 @@ function Clothes() {
           <Tops />
         </Route>
         <Route path={`${match.path}`}>
-          <AllClothes />
+				<div className='containerCards'>
+					{kproducts &&
+						kproducts.map((product)=>(
+							<ProductCard 
+							product={product}
+							/>
+						))}
+		</div>
         </Route>
       </Switch>
     </div>
@@ -59,13 +78,11 @@ function Clothes() {
 }
 
 
-function AllClothes () {
-	return(
-		<div>
-			Aquí se visualiza todo Clothes
-		</div>
-	)
-}
+// function AllClothes () {
+// 	return(
+		
+// 	)
+// }
 
 
 export default Clothes;

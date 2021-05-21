@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  // Link,
-  // NavLink,
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	// Link,
+	// NavLink,
 } from "react-router-dom";
 
 import './App.css';
@@ -19,36 +19,37 @@ import Sports from './pages/Sports/Sports';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 
+
 function App() {
-  return (
-    <Router>
-       <Navbar/>
-       <Footer/>
-      <Switch>
-				<Route path="/kids">  
-          <Kids />
+	return (
+		<Router>
+			<Navbar />
+			<Footer />
+			<Switch>
+				<Route path="/kids">
+					<Kids />
 				</Route>
 				<Route path="/accessories">
-          <Accessories />
+					<Accessories />
 				</Route>
-        <Route path="/sports">
-          <Sports />
-        </Route>
+				<Route path="/sports">
+					<Sports />
+				</Route>
 				<Route path="/shoes">
-          <Shoes />
+					<Shoes />
 				</Route>
 				<Route path="/clothes">
-          <Clothes />
+					<Clothes />
 				</Route>
 				<Route path="/offers">
-          <Offers />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-  );
+					<Offers />
+				</Route>
+				<Route path="/">
+					<Home />
+				</Route>
+			</Switch>
+		</Router>
+	);
 }
 
 
