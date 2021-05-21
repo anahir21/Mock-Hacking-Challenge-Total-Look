@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { CustomDialog, useDialog } from 'react-st-modal';
 
+//import './modalProduct.css';
+
 import logo from '../../logo.svg';
 
 function ModalPro() {
@@ -58,6 +60,7 @@ function ModalProduct() {
                 title: 'Welcome back! Sign In your account!',
                 showCloseIcon: true,
             });
+            console.log(result);
             }}
         >
         Product

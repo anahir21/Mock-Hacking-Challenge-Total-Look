@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { CustomDialog, useDialog } from 'react-st-modal';
 
+import "./modalLogin.css";
+
 function ModalLog() {
     // use this hook to control the dialog
     const dialog = useDialog();
@@ -8,7 +10,7 @@ function ModalLog() {
     const [value, setValue] = useState();
 
     return (
-        <div>
+        <div className="modalLoginContent">
         <input
             type="name"
             onChange={(e) => {
@@ -38,10 +40,11 @@ function ModalLogin() {
         <div>
         <button
             onClick={async () => {
-            const result = await CustomDialog(<ModalLog />, {
-                title: 'Welcome back! Sign In your account!',
-                showCloseIcon: true,
-            });
+                const result = await CustomDialog(<ModalLog />, {
+                    title: 'Welcome back! Sign In your account!',
+                    showCloseIcon: true,
+                });
+                console.log(result);
             }}
         >
             Login
