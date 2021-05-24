@@ -9,10 +9,10 @@ import bannerB from "../../assets/bannerB.png";
 
 
 
-/* 
+/*
 
 export default OffersHome = () => {
-  
+
   const mockProductsOffer = [
     {
       id: "t01",
@@ -23,9 +23,9 @@ export default OffersHome = () => {
       color: "white",
       size: "M",
       price: 199,
-      offerPrice: 99,
+      offerPrice: 99,   
       views: 0,
-    },
+    },   
     {
       id: "t02",
       category: "clothes",
