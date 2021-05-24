@@ -39,7 +39,6 @@
     top: 25%;
     right: 25%;
     position: absolute;
-   
 }
 
 .cart{
@@ -86,19 +85,19 @@ h2{
     display: flex;
     flex-direction: row;
     position: absolute;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .filename {
     display: flex;
     min-width: 0;
-  }
-  
-  .filename__base {
+}
+
+.filename__base {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
 
 
 
@@ -120,6 +119,18 @@ h2{
 .mainNav li {
 	margin-left: 2%;
 	list-style: none;
+}
+
+.logotype{
+    width: 180px;
+    margin-top: 15px;
+    margin-left: 50px;
+}   
+
+.cart{
+    width: 50px;
+    margin-top: 15px;
+    margin-right: 50px;
 }
 
 
