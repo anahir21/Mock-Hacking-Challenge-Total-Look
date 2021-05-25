@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../../components/ProductsCard/ProductCard.js"
-
+import './Sports.css'
 const Sports = ({data}) => {
 	console.log(data)
 	const [kproducts, setKproducts] = useState();

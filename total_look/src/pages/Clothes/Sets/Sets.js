@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../../../components/ProductsCard/ProductCard.js"
-
+import './Sets.css';
 const Sets = ({data}) => {
 	console.log(data)
 	const [kproducts, setKproducts] = useState();
@@ -17,7 +17,7 @@ const Sets = ({data}) => {
 	}, []);
 
 	return (
-		<div>
+		<div className='containerCards'>
 			{kproducts &&
 				kproducts.map((product)=>(
 					<ProductCard 

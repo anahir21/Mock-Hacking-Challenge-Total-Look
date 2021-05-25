@@ -116,7 +116,7 @@ h2{
 .mainNav{
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	width: 100%;
 	justify-content: center;
 }
 .mainNav li {
