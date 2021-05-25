@@ -4,7 +4,6 @@ import bannerHS from "../../assets/bannerHS.png";
 import bannerT from "../../assets/bannerT.png";
 import bannerB from "../../assets/bannerB.png";
 
-
 export const OffersHome = () => {
 	return (
 		<div classname= "offerList">
