@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+.offerList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20%;
+  margin-bottom: 70px;
+  margin-right: 50px;
+  justify-content: space-around;
+  border-color: cadetblue;
+
+
+}
+
+.offers {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.bannerOffers {
+  display: flex;
+  float: inherit;
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+
+
+

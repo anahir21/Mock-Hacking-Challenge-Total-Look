@@ -1,9 +1,11 @@
-import React from "react"; r
+import React from "react";
+import {OffersHome} from '../../components/OffersHome/OffersHome.js'
+import './Home.css'
 
 const Home = () => {
 	return (
-		<div>
-			Holi, estás en Home
+		<div className='containerHome'>
+			<OffersHome/>
 		</div>
 	)
 }

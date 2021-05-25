@@ -1,25 +1,108 @@
-h1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 22px;
-    color: #000000;
+.navbar{
+    /* top: 0%;
+    position: absolute; */
+    border-top: 20px solid #F9F9F9;
+    width: 100%;
+    height: 12%;
+    max-height: 12%;
+    border-bottom: 30px solid #DDF4FA;;
 }
 
-.navbar{
-    border-top: 25px solid  #F9F9F9;
-    width: 100%;
-    height: 130px;
+
+.promotions{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    line-height: 20%;
+    
+}
+
+.logotype{
+    width: 15%;
+    height: auto;
+    margin-left: 3%;
+		cursor: pointer;
+}
+
+.searchInput{
+    width: 12%;
+    height: 23%;
+    top: 35%; 
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.48);
+    right: 15%;
+    position: absolute;
+    border: aliceblue;
+}
+
+.eyeglass {
+    width: 3.5%;
+    height: auto;
+    top: 25%;
+    right: 25%;
+    position: absolute;
+   
+}
+
+.cart{
+    width: 3.5%;
+    height: auto;
+    top: 20%; 
+    right: 10%;
+    position: absolute;
+}
+
+.salesImage{
+    width: 3.9%;
+    height: auto;
+    top: 75%; 
+    right: 41.5%;
+    position: absolute;
+}
+
+.log {
+    position: absolute;
+    top: -27%;
+    right: 3%;
+    font-size: 13px;
+		cursor: pointer;
+}
+
+.join{
+    position: absolute;
+    top: -27%;
+    right: 1%;
+    font-size: 13px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+    text-align: center; 
+}
+
+h2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-
+    position: absolute;
+   justify-content: space-between;
 }
+
+.filename {
+    display: flex;
+    min-width: 0;
+  }
+  
+  .filename__base {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+
 
 .border {
     border-top: 25px solid  #fc810f;
@@ -30,20 +113,31 @@ h1 {
 }
 
 
-.logotype{
-    width: 180px;
-    margin-top: 15px;
-    margin-left: 50px;
+.mainNav{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+}
+.mainNav li {
+	margin-left: 2%;
+	list-style: none;
+	cursor: pointer;
 }
 
-.cart{
-    width: 50px;
-    margin-top: 15px;
-    margin-right: 50px;
+.mainNav li a{
+
 }
 
-.eyeglass {
-    width: 25px;
-    margin-top: 15px;
-    margin-right: 2px;
+a{
+  text-decoration: none;
+  color:black;
 }
+
+a:hover{
+	text-decoration: none;
+	color:rgb(71, 71, 71);
+  }
+
+
+

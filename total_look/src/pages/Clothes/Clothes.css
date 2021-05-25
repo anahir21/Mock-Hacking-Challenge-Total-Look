@@ -1,0 +1,19 @@
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+		margin: 5% 0% 0% 5%;
+    padding: 0% 0% 0% 2%;
+}
+
+.secondNav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.secondNav li {
+	margin-left: 2%;
+	list-style: none;
+	width: 10%;
+}
+

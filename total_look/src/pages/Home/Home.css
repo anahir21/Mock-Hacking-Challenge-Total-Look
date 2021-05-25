@@ -1,0 +1,24 @@
+.containerHome{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5% 0% 0% 5%;
+    padding: 0% 0% 0% 2%;
+}
+.Rieling{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  border-color: cadetblue;
+}
+
+.riel {
+    display: flex;
+    float: inherit;
+    width: 80%;
+    margin-bottom: 20px;
+  }
