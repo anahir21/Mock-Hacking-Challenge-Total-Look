@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../../../components/ProductsCard/ProductCard.js"
-
+import ProductCard from "../../../components/ProductsCard/ProductCard.js";
+import './Bottoms.css'
 const Bottoms = ({data}) => {
 	console.log(data)
 	const [kproducts, setKproducts] = useState();
@@ -17,7 +17,7 @@ const Bottoms = ({data}) => {
 	}, []);
 
 	return (
-		<div>
+		<div className='containerCards'>
 			{kproducts &&
 				kproducts.map((product)=>(
 					<ProductCard 

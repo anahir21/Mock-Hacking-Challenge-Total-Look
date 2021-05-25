@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../../components/ProductsCard/ProductCard.js"
+import ProductCard from "../../components/ProductsCard/ProductCard.js";
+import './Kids.css'
 
 const Kids = ({data}) => {
 	console.log(data)
