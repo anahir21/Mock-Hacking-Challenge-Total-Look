@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../../components/ProductsCard/ProductCard.js"
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter as Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
+  useRouteMatch
 } from "react-router-dom";
 
 import Tops from './Tops/Tops.js'
@@ -31,12 +28,8 @@ function Clothes() {
   let match = useRouteMatch();
   return (
     <div>
-<<<<<<< HEAD
       {/* <h2>Holi, estás en Clothes</h2>
       <ul>
-=======
-      <ul className="secondNav">
->>>>>>> 074dc067597d13e53a0543452a0e55bc059a4505
 				<li>
           <Link to={`${match.url}`}>All</Link>
         </li>
