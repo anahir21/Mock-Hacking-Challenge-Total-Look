@@ -25,27 +25,3 @@
   width: 80%;
   margin-bottom: 20px;
 }
-.offerContainer {
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-size: 50px;
-  color: white;
-  filter: brightness(0.9);
-  background-image: url("../Assets/background.jpg");
-}
-
-.offerContainer h3 {
-  align-content: center;
-  font-family: "Montserrat";
-  font-size: 40px;
-  color: black;
-}
-
-.offerContainer p {
-  align-content: center;
-  font-family: "Montserrat";
-  font-size: 40px;
-}

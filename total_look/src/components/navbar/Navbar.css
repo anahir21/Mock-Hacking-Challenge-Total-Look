@@ -21,6 +21,7 @@
     width: 15%;
     height: auto;
     margin-left: 3%;
+		cursor: pointer;
 }
 
 .searchInput{
@@ -39,6 +40,7 @@
     top: 25%;
     right: 25%;
     position: absolute;
+   
 }
 
 .cart{
@@ -62,6 +64,7 @@
     top: -27%;
     right: 3%;
     font-size: 13px;
+		cursor: pointer;
 }
 
 .join{
@@ -85,19 +88,19 @@ h2{
     display: flex;
     flex-direction: row;
     position: absolute;
-    justify-content: space-between;
+   justify-content: space-between;
 }
 
 .filename {
     display: flex;
     min-width: 0;
-}
-
-.filename__base {
+  }
+  
+  .filename__base {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
+  }
 
 
 
@@ -113,24 +116,28 @@ h2{
 .mainNav{
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	width: 100%;
 	justify-content: center;
 }
 .mainNav li {
 	margin-left: 2%;
 	list-style: none;
+	cursor: pointer;
 }
 
-.logotype{
-    width: 180px;
-    margin-top: 15px;
-    margin-left: 50px;
-}   
+.mainNav li a{
 
-.cart{
-    width: 50px;
-    margin-top: 15px;
-    margin-right: 50px;
 }
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+	text-decoration: none;
+	color:rgb(71, 71, 71);
+  }
+
 
 

@@ -9,7 +9,7 @@ import kidsbanner from "../../assets/kidsbanner.jpg";
 import shoesbanner from "../../assets/shoesbanner.jpg";
 import sportsbanner from "../../assets/sportsbanner.jpg"
 import underwearbanner from "../../assets/underwearbanner.jpg"
-
+import './Offers.css'
 
 export const Offers = () => {
 	return (
